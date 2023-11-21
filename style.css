@@ -1,0 +1,89 @@
+body {
+    font-family: "Space Mono", monospace; 
+    --darker-grey: hsl(0, 0%, 30%);
+}
+
+.base {
+    display: flex;
+    background-color: rgb(31, 50, 71);
+
+    padding: 2rem;
+    border-radius: 25px;
+    
+    width: fit-content;
+
+    flex-direction: column;
+    
+}
+
+.screen {
+    text-align: right;
+    padding: 1rem;
+    font-size: 4rem;
+    background-color: green;
+}
+
+.buttonpad {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+
+    justify-content: space-evenly;
+}
+
+.funcpad {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    padding: 1rem;
+}
+
+.numpad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    font-size: 3rem;
+
+    /* background-color: brown; */
+
+    padding: 1rem;
+
+    gap: 1rem;
+}
+
+.oprpad {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    /* background-color: tomato; */
+
+    padding: 1rem;
+
+    gap: 1rem;
+}
+
+.button {
+    padding-inline: 2rem;
+    padding-block: 0.8rem;
+    background-color: darkgrey;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+
+    font-size: 2rem;
+}
+
+.button:hover {
+    background-color: var(--darker-grey);
+    cursor: pointer;
+}
+
+.plus {
+    grid-row-start: 3;
+    grid-row-end: 5; 
+}
+
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
